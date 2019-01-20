@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+                      <!-- Dimensions related to HomeActivity-->
+    <!-- Dimensions related to title -->
+    <dimen name="title_margin">10dp</dimen>
+    <dimen name="title_padding_right">10dp</dimen>
+    <dimen name="title_text_size">20dp</dimen>
+    <!-- Dimensions related to items -->
+    <dimen name="items_department_margin_right">20dp</dimen>
+    <dimen name="items_place_margin_right">25dp</dimen>
+    <dimen name="items_text_size">20dp</dimen>
+
+    <!-- Dimensions related to Profile Activity-->
+    <dimen name="profile_text_size">15sp</dimen>
+
+</resources>

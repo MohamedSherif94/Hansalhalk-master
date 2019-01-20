@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Hansalhalk</string>
+
+    <string name="email">contact_us@hansalhalk.com</string>
+    <string name="phone_no1">201111125248+</string>
+
+    <!-- Strings related to login -->
+    <string name="email_hint">البريد الالكترونى</string>
+    <string name="password_hint">كلمة السر</string>
+    <string name="log_in">تسجيل دخول</string>
+    <string name="forget_password">نسيت كلمة السر</string>
+
+    <!-- Strings related to Home -->
+    <string name="departments_title">الأقسام</string>
+    <string name="radiation_department">الأشعة</string>
+    <string name="analyzes_department">التحاليل</string>
+    <string name="teeth_department">الأسنان</string>
+    <string name="place_title">المكان</string>
+    <string name="country">الدولة</string>
+    <string name="city">المدينة</string>
+    <string name="prompt">Choose a country</string>
+    <string-array name="countries_array">
+        <item>مصر</item>
+        <item>المملكة العربية السعودية</item>
+        <item>الولايات المتحدة الأمريكية</item>
+        <item>الامارات العربية المتحدة</item>
+        <item>المغرب</item>
+        <item>تركيا</item>
+        <item>الكويت</item>
+        <item>العراق</item>
+        <item>البحرين</item>
+        <item>تونس</item>
+        <item>الجزائر</item>
+        <item>السودان</item>
+        <item>الأردن</item>
+        <item>لبنان</item>
+        <item>قطر</item>
+        <item>عمان</item>
+        <item>سوريا</item>
+        <item>فلسطين</item>
+        <item>ليبيا</item>
+        <item>اثيوبيا</item>
+        <item>الصومال</item>
+    </string-array>
+    <string name="search">بحث</string>
+
+    <!-- Strings related to Home -->
+    <string name="name">محمد سعيد شريف</string>
+    <string name="address">الغربية - طنطا - قسم الأشعة</string>
+    <string name="title_profile_activity">الصفحة الشخصية</string>
+
+    <string name="title_activity_login">تسجيل الدخول</string>
+    <string name="title_activity_home">الصفحة الرئيسية</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mohamed Sherif</string>
+    <string name="nav_header_subtitle">abosaid@abokamel.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">الضبط</string>
+    <string name="action_logout">تسجيل خروج</string>
+
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <stroke android:width="2dp"
+        android:color="#0296d3"
+
+        />
+    <gradient
+        android:angle="225"
+        android:centerColor="@color/wasem_white_color"
+        android:endColor="@color/wasem_white_color"
+        android:startColor="@color/wasem_white_color"
+        />
+    <corners
+        android:bottomLeftRadius="25dp"
+        android:bottomRightRadius="25dp"
+        android:topLeftRadius="25dp"
+        android:topRightRadius="25dp" />
+</shape>

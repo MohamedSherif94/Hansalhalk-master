@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users_list.UserProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        //Header
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/wasem_white_color"
+            android:padding="16dp">
+
+            //Name
+            <TextView
+                android:id="@+id/user_profile_name_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/items_text_size" />
+
+            //Profile Image
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/user_profile_name_textview"
+                android:layout_centerHorizontal="true"/>
+
+            //Address
+            <TextView
+                android:id="@+id/user_profile_address_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/user_profile_image"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/items_text_size" />
+
+            //Department
+            <TextView
+                android:id="@+id/user_profile_department_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/user_profile_address_textview"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/items_text_size" />
+        </RelativeLayout>
+
+        //Username
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/shape_title_background">
+
+            <ImageView
+                android:id="@+id/user_profile_username_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_user_name_black"/>
+            <TextView
+                android:id="@+id/user_profile_username_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_profile_username_ic"
+                android:layout_marginRight="20dp"
+                android:textSize="@dimen/profile_text_size"
+                android:textColor="#000"
+                android:background="@drawable/shape_title_background"/>
+        </RelativeLayout>
+
+        //Email
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/shape_title_background">
+
+            <ImageView
+                android:id="@+id/user_profile_email_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="sendEmailToUser"
+                android:src="@drawable/ic_email"/>
+            <TextView
+                android:id="@+id/user_profile_email_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_profile_email_ic"
+                android:layout_marginRight="20dp"
+                android:textSize="@dimen/profile_text_size"
+                android:textColor="#000"
+                android:background="@drawable/shape_title_background"/>
+        </RelativeLayout>
+
+        //Phone Number
+        <RelativeLayout
+            android:id="@+id/user_profile_phone_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/shape_title_background">
+
+            <ImageView
+                android:id="@+id/user_profile_phone_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="callUserPhone"
+                android:src="@drawable/ic_right_phone"/>
+            <TextView
+                android:id="@+id/user_profile_phone_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_profile_phone_ic"
+                android:layout_marginRight="20dp"
+                android:textSize="@dimen/profile_text_size"
+                android:textColor="#000"
+                android:background="@drawable/shape_title_background"/>
+        </RelativeLayout>
+
+        //Facebook
+        <RelativeLayout
+            android:id="@+id/user_profile_facebook_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/shape_title_background">
+
+            <ImageView
+                android:id="@+id/user_profile_facebook_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="openFacebookPage"
+                android:src="@drawable/ic_facebook"/>
+            <TextView
+                android:id="@+id/user_profile_facebook_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_profile_facebook_ic"
+                android:layout_marginRight="20dp"
+                android:textSize="@dimen/profile_text_size"
+                android:textColor="#000"
+                android:background="@drawable/shape_title_background"/>
+        </RelativeLayout>
+
+        //Twitter
+        <RelativeLayout
+            android:id="@+id/user_profile_twitter_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/shape_title_background">
+
+            <ImageView
+                android:id="@+id/user_profile_twitter_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="openTwitterPage"
+                android:src="@drawable/ic_twitter"/>
+            <TextView
+                android:id="@+id/user_profile_twitter_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_profile_twitter_ic"
+                android:layout_marginRight="20dp"
+                android:textSize="@dimen/profile_text_size"
+                android:textColor="#000"
+                android:background="@drawable/shape_title_background"/>
+        </RelativeLayout>
+
+        //Instagram
+        <RelativeLayout
+            android:id="@+id/user_profile_instagram_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/shape_title_background">
+
+            <ImageView
+                android:id="@+id/user_profile_instagram_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="openInstagramPage"
+                android:src="@drawable/ic_instagram"/>
+            <TextView
+                android:id="@+id/user_profile_instagram_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_profile_instagram_ic"
+                android:layout_marginRight="20dp"
+                android:textSize="@dimen/profile_text_size"
+                android:textColor="#000"
+                android:background="@drawable/shape_title_background"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
