@@ -5,25 +5,17 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.view.MotionEvent;
 import android.widget.Button;
-import android.widget.Toast;
-
-import com.androidnetworking.AndroidNetworking;
-import com.androidnetworking.common.Priority;
-import com.androidnetworking.error.ANError;
-import com.androidnetworking.interfaces.JSONObjectRequestListener;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public class HelperClass {
 
-    public static String login_url = "http://hansalhalk.com/api/auth/login";
-    public static String logout_url = "http://hansalhalk.com/api/logout";
-    public static String user_info_url = "http://hansalhalk.com/api/user";
-    public static String update_user_info_url = "http://www.hansalhalk.com/api/profile/update";
-    public static String departments_categories_url = "http://hansalhalk.com/api/cats";
-    public static String search_url = "http://hansalhalk.com/api/advsearch";
-    public static String profile_images_url = "http://www.hansalhalk.com/resources/assets/cpanel/images/users/";
+    public static String domain_url = "https://hansalhalk.com";
+    public static String login_url = domain_url + "/api/auth/login";
+    public static String logout_url = domain_url + "/api/logout";
+    public static String user_info_url = domain_url + "/api/user";
+    public static String update_user_info_url = domain_url + "/api/profile/update";
+    public static String departments_categories_url = domain_url + "/api/cats";
+    public static String search_url = domain_url + "/api/advsearch";
+    public static String profile_images_url = domain_url + "/resources/assets/cpanel/images/users/";
 
     public static String TOKEN = "token";
     public static String CHECKED_LIST = "checked_list";
